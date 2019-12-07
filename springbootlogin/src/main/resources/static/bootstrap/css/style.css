@@ -1,0 +1,10 @@
+
+/*一些间距设置*/
+
+.between-rows-10{
+    margin: 10px auto;
+}
+
+.between_cols-10{
+    margin: 0 10px;
+}
