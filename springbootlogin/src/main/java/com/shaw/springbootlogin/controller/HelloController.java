@@ -13,6 +13,8 @@ public class HelloController {
 
     //  表示发送一个/hello请求的时候做出的响应
 
+
+
     @RequestMapping("index")
     public String entrance(){
         return "index";

@@ -7,6 +7,8 @@ public class UserCreateForm {
     private String userName;
     @NotEmpty
     private String password;
+    @NotEmpty
+    private String passwordRepeat;
 
     public String getUserName() {
         return userName;
@@ -22,5 +24,13 @@ public class UserCreateForm {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPasswordRepeat() {
+        return passwordRepeat;
+    }
+
+    public void setPasswordRepeat(String passwordRepeat) {
+        this.passwordRepeat = passwordRepeat;
     }
 }

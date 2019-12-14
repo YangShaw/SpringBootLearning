@@ -1,5 +1,6 @@
 package com.shaw.springbootlogin.controller;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.shaw.springbootlogin.model.Info;
 import com.shaw.springbootlogin.model.User;
 import com.shaw.springbootlogin.service.UserServiceImpl;
@@ -41,6 +42,9 @@ public class LoginController {
     public String userLogin(Model model,
                             @RequestParam("username")String userName,
                             @RequestParam("password")String password){
+        System.out.println(userName);
+        System.out.println(password);
+
         User user = userService.getUserByUserName(userName);
 
         if(user!=null && user.getPassword().equals(password)){
